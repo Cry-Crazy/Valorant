@@ -106,7 +106,7 @@ p {
 .main_page {
   background: url(../pictures/general/03b1a76c34563ab69c80a4ea7c06a79c.png) no-repeat center;
   background-size: 100%;
-  background-position: 11% 0%;
+  background-position: 11% 150%;
   position: relative;
   width: 85%;
   height: 90%;
@@ -132,7 +132,7 @@ p {
   height: 100%;
   width: 100%;
   border-radius: 20px;
-  background-color: #ff4656e3;
+  background-color: #ff4656e8;
 }
 
 .main_page .page_background .main-page__header {
@@ -230,12 +230,8 @@ p {
 }
 
 .main_page .page_background .main-page__header .header__wrap .header__accaunt .accaunt__icon {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  height: 40px;
+  width: auto;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -248,14 +244,133 @@ p {
 }
 
 .main_page .page_background .main_page__container {
-  height: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  height: 82%;
+  position: relative;
+}
+
+.main_page .page_background .main_page__container .container__qubes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube {
+  position: absolute;
+  background: #1f23266e;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube1 {
+  height: 40px;
+  width: 40px;
+  top: 8%;
+  left: 34%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube2 {
+  height: 40px;
+  width: 40px;
+  bottom: 20%;
+  left: 40%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube3 {
+  height: 40px;
+  width: 40px;
+  top: 30%;
+  right: 20%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube4 {
+  height: 40px;
+  width: 40px;
+  bottom: 10%;
+  right: 5%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube5 {
+  height: 8px;
+  width: 60px;
+  top: 20%;
+  right: 40%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube6 {
+  height: 8px;
+  width: 60px;
+  top: 60%;
+  right: 40%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube7 {
+  height: 8px;
+  width: 60px;
+  top: 70%;
+  right: 20%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube8 {
+  height: 8px;
+  width: 230px;
+  top: 5%;
+  right: 20%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube9 {
+  height: 8px;
+  width: 40px;
+  top: 12%;
+  left: 5%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube10 {
+  height: 8px;
+  width: 8px;
+  top: 8%;
+  left: 10%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube11 {
+  height: 8px;
+  width: 8px;
+  top: 8%;
+  left: 12%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube12 {
+  height: 8px;
+  width: 8px;
+  bottom: 8%;
+  right: 10%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube13 {
+  height: 8px;
+  width: 8px;
+  bottom: 8%;
+  right: 12%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube14 {
+  height: 8px;
+  width: 8px;
+  top: 40%;
+  left: 5%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube15 {
+  height: 8px;
+  width: 8px;
+  bottom: 26%;
+  right: 39%;
+}
+
+.main_page .page_background .main_page__container .container__qubes .qube16 {
+  height: 8px;
+  width: 8px;
+  top: 28%;
+  right: 39%;
 }
 
 .main_page .page_background .main_page__footer {
@@ -330,6 +445,28 @@ p {
   .page-background .circle7 {
     width: 270px;
     height: 270px;
+  }
+  .main_page {
+    background-size: 100%;
+    background-position: 0% 160%;
+  }
+  .main_page .main-page__header .header__wrap .header__logo .logo_riot {
+    height: 25px;
+    width: auto;
+  }
+  .main_page .main-page__header .header__wrap .header__logo .logo_valorant {
+    height: 27px;
+    width: auto;
+  }
+  .main_page .main-page__header .header__wrap .header__links p a {
+    font-size: .9rem;
+  }
+  .main_page .main-page__header .header__wrap .header__accaunt .accaunt__icon {
+    height: 20px;
+    width: 25px;
+  }
+  .main_page .main-page__header .header__wrap .header__accaunt .accaunt__name {
+    font-size: .9rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
