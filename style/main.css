@@ -714,9 +714,6 @@ p {
     height: 20px;
     width: auto;
   }
-  .main_page .main_page__container .container__wrap .container__heroes .hero .hero__photo {
-    position: relative;
-  }
   .main_page .main_page__container .container__wrap .container__heroes .hero .hero__abilites_icons {
     padding: 9px 0;
   }
