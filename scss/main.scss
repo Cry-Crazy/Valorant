@@ -1,13 +1,6 @@
-$dark: #1F2326;
-$red:  #FF4656;
-$grey: #505155;
-$mBold: 'montserrat-bold';
-$mReg: 'montserrat-regular';
-$druk: 'druk';
-
 
 @import 'font';
-
+@import 'var';
 
 
 
@@ -201,108 +194,203 @@ p{
                         top: 0;
                         height: 100%;
                         width: 100%;
+                        z-index: 2;
                         .qube {
                             position: absolute;
                             background: #1f23266e;
                         }
                         .qube1 {
-                            height: 40px;
-                            width: 40px;
+                            height: $qubeSize * 5;
+                            width: $qubeSize * 5;
                             top: 8% ;
                             left: 34% ;
                         }
                         .qube2 {
-                            height: 40px;
-                            width: 40px;
+                            height: $qubeSize * 5;
+                            width: $qubeSize * 5;
                             bottom: 20% ;
                             left: 40% ;
                         }
                         .qube3 {
-                            height: 40px;
-                            width: 40px;
+                            height: $qubeSize * 5;
+                            width: $qubeSize * 5;
                             top: 30%;
                             right: 20%;
                         }
                         .qube4 {
-                            height: 40px;
-                            width: 40px;
+                            height: $qubeSize * 5;
+                            width: $qubeSize * 5;
                             bottom: 10%;
                             right: 5%;
                         }
                         .qube5 {
-                            height: 8px;
-                            width: 60px;
+                            height: $qubeSize;
+                            width: $qubeSize * 7.5;
                             top: 20%;
                             right: 40%;
                         }
                         .qube6 {
-                            height: 8px;
-                            width: 60px;
+                            height: $qubeSize;
+                            width: $qubeSize * 7.5;
                             top: 60% ;
                             right: 40% ;
                         }
                         .qube7 {
-                            height: 8px;
-                            width: 60px;
+                            height: $qubeSize;
+                            width: $qubeSize * 7.5;
                             top: 70%;
                             right: 20%;
                         }
                         .qube8 {
-                            height: 8px;
-                            width: 230px;
+                            height: $qubeSize;
+                            width: $qubeSize * 28;
                             top: 5%;
                             right: 20%;
                         }
                         .qube9 {
-                            height: 8px;
-                            width: 40px;
+                            height: $qubeSize;
+                            width: $qubeSize * 5;
                             top: 12%;
                             left: 5%;
                         }
                         .qube10 {
-                            height: 8px;
-                            width: 8px;
+                            height: $qubeSize;
+                            width: $qubeSize;
                             top: 8%;
                             left: 10%;
                         }
                         .qube11 {
-                            height: 8px;
-                            width: 8px;
+                            height: $qubeSize;
+                            width: $qubeSize;
                             top: 8%;
                             left: 12%;
                             
                         }
                         .qube12 {
-                            height: 8px;
-                            width: 8px;
+                            height: $qubeSize;
+                            width: $qubeSize;
                             bottom: 8%;
                             right: 10%;
                         }
                         .qube13 {
-                            height: 8px;
-                            width: 8px;
+                            height: $qubeSize;
+                            width: $qubeSize;
                             bottom: 8%;
                             right: 12%;
                         }
                         .qube14 {
-                            height: 8px;
-                            width: 8px;
+                            height: $qubeSize;
+                            width: $qubeSize;
                             top: 40%;
                             left: 5%;
                         }
                         .qube15 {
-                            height: 8px;
-                            width: 8px;
+                            height: $qubeSize;
+                            width: $qubeSize;
                             bottom: 26%;
                             right: 39%;
                         }
                         .qube16 {
-                            height: 8px;
-                            width: 8px;
+                            height: $qubeSize;
+                            width: $qubeSize;
                             top: 28%;
                             right: 39%;
                         }
                     }
+                    .container__name{
+                        position: relative;
+                        z-index: 10;
+
+                        width: fit-content;
+                        height: fit-content;
+                        
+                        display: inline-block;
+                        left: 4%;
+                        bottom: -6%;
+
+                        border-bottom: $qubeSize solid #1f23266e ;
+                        padding-bottom: 1%;
+                        .container__name_name {
+                            display: inline-block;
+                            width: fit-content;
+                            height: fit-content;
+                            margin: 0;
+                            position: relative;
+                            
+                            font-family: $druk;
+                            font-size: 8rem;
+                            text-transform: uppercase;
+                            color: transparent;  
+                            
+                            -webkit-text-stroke:0.7px white;
+                            -webkit-text-fill-color: transparent;
+                        
+                            text-align: center;
+                            writing-mode: vertical-lr;
+                        }
+                        .container__name_logo {
+                            display: inline-flex;
+                            position: relative;
+                            transform: translateY(-45%);
+                            
+                            justify-content: center ;
+                            align-items: center;
+
+                            height: $qubeSize * 10;
+                            width: $qubeSize * 10;
+                            background-color: #1f23266e;
+                            &::after{
+                                content: '';
+                                height: $qubeSize;
+                                width: $qubeSize * 10;
+                                background-color: #1f23266e;
+                                position: absolute;
+                                top: 120%;
+                            }
+                            svg{
+                                height: 48px;
+                                width: auto;
+                                mix-blend-mode: exclusion;
+                                path{
+                                fill:#FF4656 ;
+                                }
+
+                            }
+                        }
+                    }
+                    .container__heroes {
+                        
+                        .hero {
+
+                            .hero__description {
+                                
+                                .hero__bornplace {
+                                }
+                                .hero__name {
+                                }
+                            }
+                            .hero__photo {
+                                
+                            }
+                            .hero__abilites_icons {
+                                
+                            }
+                            .abilites_icons {
+                                .abilites_icons{
+
+                                }
+                                .abilites_icons_1 {
+                                }
+                                .abilites_icons_2 {
+                                }
+                                .abilites_icons_3 {
+                                }
+                                .abilites_icons_4 {
+                                }
+                            }
+                        }
+                    }
+
                 }
                 .main_page__footer {
                     height: 9%;
@@ -386,8 +474,7 @@ p{
 
 
 
-//todo нужно исправить фон который ломается при адаптиве 
-//todo ну тот что картинка
+
 @media  (max-width:1440px) {
     html{
         font-size: 10px;
@@ -470,7 +557,32 @@ p{
                 }
             }
         }
-        
+
+        .main_page__container{
+
+            .container__name {
+
+                #agents {
+                    font-size: 6rem;
+                }
+                #valorant {
+                            height: 40px;
+                            width: 40px;
+                            transform: translateY(-35%);
+                            &::after{
+                                content: '';
+                                height: 4px;
+                                width: 40px;
+                                top: 120%;
+                            }
+                    svg{
+                        height: 20px;
+                        width: auto;
+                        
+                    }
+                }
+            }
+        }
 
     }
 }

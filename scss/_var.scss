@@ -1,0 +1,11 @@
+$dark: #1F2326;
+$red:  #FF4656;
+$grey: #505155;
+$mBold: 'montserrat-bold';
+$mReg: 'montserrat-regular';
+$druk: 'druk';
+$qubeSize: 8px !global ;
+@media  (max-width:1440px) {
+    $qubeSize: 4px !global;
+
+}
