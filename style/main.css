@@ -242,7 +242,7 @@ p {
 .main_page .page_background .main-page__header .header__wrap .header__accaunt .accaunt__name {
   font-family: "montserrat-bold";
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
@@ -494,6 +494,7 @@ p {
   margin-left: 7%;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  border: 2px solid #1F2326;
   border-top-left-radius: 20px;
   background: #1F2326;
 }
@@ -521,7 +522,7 @@ p {
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  -webkit-text-stroke: 0.7px white;
+  -webkit-text-stroke: .5px white;
   -webkit-text-fill-color: transparent;
 }
 
@@ -576,9 +577,114 @@ p {
 }
 
 .main_page .page_background .main_page__container .container__wrap .container__abilites {
+  position: relative;
+  bottom: -33%;
+  left: -5%;
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.4fr 2.4fr 2.4fr 1.5fr;
+      grid-template-columns: 2.4fr 2.4fr 2.4fr 1.5fr;
+  gap: 40px;
+  height: 120%;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__abilites .ability__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  background-color: white;
+  border: 2px solid #000000;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__abilites .ability__block .block__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__abilites .ability__block .block__wrap .block__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  height: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  gap: 5%;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__abilites .ability__block .block__wrap .block__description .descriptopn_1 {
+  font-family: "druk";
+  font-size: 2rem;
+  color: #C4C4C4;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__abilites .ability__block .block__wrap .block__description .descriptopn_2 {
+  font-family: "druk";
+  color: black;
+  font-size: 1.5rem;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__abilites .ability__block .block__wrap .block__description .descriptopn_3 {
+  font-family: "montserrat-regular";
+  font-size: 1rem;
+  color: #1F2326;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__abilites .ability__block .block__wrap .block__ability_icon {
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 80%;
+  width: 30%;
+  background-color: #FF4656;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__abilites .ability__block .block__wrap .block__ability_icon svg {
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  width: 8rem;
+  height: auto;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__abilites .ability__next {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 50%;
+  background-color: white;
+  border: 2px solid #000000;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__abilites .ability__next span {
+  display: inline-block;
 }
 
 .main_page .page_background .main_page__footer {
@@ -687,7 +793,7 @@ p {
     width: auto;
   }
   .main_page .main-page__header .header__wrap .header__links p a {
-    font-size: .9rem;
+    font-size: 1.1rem;
   }
   .main_page .main-page__header .header__wrap .header__accaunt .accaunt__icon {
     height: 20px;
@@ -697,7 +803,7 @@ p {
     font-size: .9rem;
   }
   .main_page .main_page__container .container__wrap .container__name #agents {
-    font-size: 6rem;
+    font-size: 7rem;
   }
   .main_page .main_page__container .container__wrap .container__name #valorant {
     height: 40px;
@@ -730,7 +836,7 @@ p {
 
 @media (max-width: 1366px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
   }
 }
 /*# sourceMappingURL=main.css.map */
