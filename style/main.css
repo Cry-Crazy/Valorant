@@ -535,12 +535,10 @@ p {
 }
 
 .main_page .page_background .main_page__container .container__wrap .container__heroes .hero .hero__photo img {
-  position: relative;
-  right: 0;
+  position: absolute;
+  right: 0%;
   height: 100%;
   width: auto;
-  -webkit-transform: scale(100%);
-          transform: scale(100%);
 }
 
 .main_page .page_background .main_page__container .container__wrap .container__heroes .hero .hero__abilites_icons {
@@ -585,7 +583,7 @@ p {
 .main_page .page_background .main_page__footer {
   height: 9%;
   background-color: white;
-  z-index: 5;
+  z-index: 2;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   opacity: 1 !important;
@@ -718,10 +716,6 @@ p {
   }
   .main_page .main_page__container .container__wrap .container__heroes .hero .hero__photo {
     position: relative;
-  }
-  .main_page .main_page__container .container__wrap .container__heroes .hero .hero__photo img {
-    position: absolute;
-    right: -5%;
   }
   .main_page .main_page__container .container__wrap .container__heroes .hero .hero__abilites_icons {
     padding: 9px 0;

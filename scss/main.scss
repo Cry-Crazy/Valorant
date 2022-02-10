@@ -418,12 +418,11 @@ p{
                                 height: 100%;
                                 overflow: hidden;
                                 img{
-                                    position: relative;
-                                    right: 0;
+                                    position: absolute;
+                                    right: 0%;
 
                                     height: 100%;
                                     width: auto;
-                                    transform: scale(100%);
                                 }
                             }
                             .hero__abilites_icons {
@@ -473,7 +472,7 @@ p{
                 .main_page__footer {
                     height: 9%;
                     background-color: white;
-                    z-index: 5;
+                    z-index: 2;
                     border-bottom-left-radius: 15px;
                     border-bottom-right-radius: 15px;
                     opacity: 1 !important;
@@ -724,8 +723,7 @@ p{
                         .hero__photo{
                             position: relative;
                             img{
-                                position: absolute;
-                                right: -5%;
+                                
                                 
                             }
                         }
