@@ -2,8 +2,6 @@
 @import 'font';
 @import 'var';
 
-$qubeSize: 8px !global;
-
 
 
 
@@ -321,7 +319,7 @@ p{
                         // bottom: 0;
 
                         border-bottom: $qubeSize solid #1f23266e ;
-                        padding-bottom: 1%;
+                        padding-bottom: 3%;
                         .container__name_name {
                             display: inline-block;
                             width: fit-content;
@@ -556,7 +554,7 @@ p{
 
 
 @media  (max-width:1440px) {
-    $qubeSize: 4px ;
+    
     html{
         font-size: 10px;
     }
@@ -663,9 +661,38 @@ p{
                     }
                 }
                 }
+                .container__heroes{
+                    .hero{
+                        .hero__description {
 
+                        }
+                        .hero__photo{
+
+                        }
+                        .hero__abilites_icons{
+                            padding: 9px 0;
+                            .abilites_icons{
+                                svg{
+                                    height: 25px;
+                                    width: auto;
+                                }
+                                #sova_icon{
+                                    width: 30px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
 
     }
+}
+@media (max-width: 1366px) {
+    html{
+
+        font-size: 8px;
+    }
+
 }

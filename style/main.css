@@ -13,6 +13,10 @@
   src: url(../fonts/Regular.ttf);
 }
 
+@media (max-width: 1440px) {
+  /*!global*/
+}
+
 html, body {
   margin: 0;
   font-size: 15px;
@@ -404,7 +408,7 @@ p {
   display: inline-block;
   left: 20%;
   border-bottom: 8px solid #1f23266e;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 }
 
 .main_page .page_background .main_page__container .container__wrap .container__name .container__name_name {
@@ -690,6 +694,23 @@ p {
   .main_page .main_page__container .container__wrap .container__name #valorant svg {
     height: 20px;
     width: auto;
+  }
+  .main_page .main_page__container .container__wrap .container__heroes .hero .hero__abilites_icons {
+    padding: 9px 0;
+  }
+  .main_page .main_page__container .container__wrap .container__heroes .hero .hero__abilites_icons .abilites_icons svg {
+    height: 25px;
+    width: auto;
+  }
+  .main_page .main_page__container .container__wrap .container__heroes .hero .hero__abilites_icons .abilites_icons #sova_icon {
+    width: 30px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 8px;
   }
 }
 /*# sourceMappingURL=main.css.map */
