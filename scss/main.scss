@@ -302,7 +302,7 @@ p{
                             z-index: 3;
                             display: grid;
                             grid-template-columns: 1fr 6fr;
-                            grid-template-rows: 6fr  1fr;
+                            grid-template-rows: 5fr  2fr;
 
                             height: 100%;
                             width: 100%;
@@ -316,7 +316,7 @@ p{
                         letter-spacing: 10px;
                         display: inline-block;
                         left: 20%;
-                        // bottom: 0;
+                        bottom: -5%;
 
                         border-bottom: $qubeSize solid #1f23266e ;
                         padding-bottom: 3%;
@@ -516,7 +516,7 @@ p{
 
 
 
-@media  (max-width:1920px) {
+@media  (max-width:1930px) {
     html{
         font-size: 12px;
     }
@@ -544,6 +544,61 @@ p{
             height: 80px;
         }
     }
+    .main_page{
+    .main_page__container{
+        .container__wrap{
+            .container__name {
+
+            #agents {
+                
+            }
+            #valorant {
+                        height: 40px;
+                        width: 40px;
+                        transform: translateY(-35%);
+                        &::after{
+                            content: '';
+                            height: 4px;
+                            width: 40px;
+                            top: 120%;
+                        }
+                svg{
+                    height: 20px;
+                    width: auto;
+                    
+                }
+            }
+            }
+            .container__heroes{
+                .hero{
+                    .hero__description {
+
+                    }
+                    .hero__photo{
+                        
+                        img{
+                            
+                            
+                        }
+                    }
+                    .hero__abilites_icons{
+                    .abilites_icons{
+
+                        svg{
+                            height: 35px;
+                            width: auto;
+                        }
+                        #sova_icon{
+                        
+                        }
+                        
+                    }
+                    }
+                }
+            }
+        }
+    }
+}
 }
 
 
@@ -667,7 +722,12 @@ p{
 
                         }
                         .hero__photo{
-
+                            position: relative;
+                            img{
+                                position: absolute;
+                                right: -5%;
+                                
+                            }
                         }
                         .hero__abilites_icons{
                             padding: 9px 0;

@@ -386,8 +386,8 @@ p {
   display: grid;
   -ms-grid-columns: 1fr 6fr;
       grid-template-columns: 1fr 6fr;
-  -ms-grid-rows: 6fr  1fr;
-      grid-template-rows: 6fr  1fr;
+  -ms-grid-rows: 5fr  2fr;
+      grid-template-rows: 5fr  2fr;
   height: 100%;
   width: 100%;
 }
@@ -407,6 +407,7 @@ p {
   letter-spacing: 10px;
   display: inline-block;
   left: 20%;
+  bottom: -5%;
   border-bottom: 8px solid #1f23266e;
   padding-bottom: 3%;
 }
@@ -590,7 +591,7 @@ p {
   opacity: 1 !important;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1930px) {
   html {
     font-size: 12px;
   }
@@ -614,6 +615,26 @@ p {
   .page-background .circle6 {
     width: 80px;
     height: 80px;
+  }
+  .main_page .main_page__container .container__wrap .container__name #valorant {
+    height: 40px;
+    width: 40px;
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
+  }
+  .main_page .main_page__container .container__wrap .container__name #valorant::after {
+    content: '';
+    height: 4px;
+    width: 40px;
+    top: 120%;
+  }
+  .main_page .main_page__container .container__wrap .container__name #valorant svg {
+    height: 20px;
+    width: auto;
+  }
+  .main_page .main_page__container .container__wrap .container__heroes .hero .hero__abilites_icons .abilites_icons svg {
+    height: 35px;
+    width: auto;
   }
 }
 
@@ -694,6 +715,13 @@ p {
   .main_page .main_page__container .container__wrap .container__name #valorant svg {
     height: 20px;
     width: auto;
+  }
+  .main_page .main_page__container .container__wrap .container__heroes .hero .hero__photo {
+    position: relative;
+  }
+  .main_page .main_page__container .container__wrap .container__heroes .hero .hero__photo img {
+    position: absolute;
+    right: -5%;
   }
   .main_page .main_page__container .container__wrap .container__heroes .hero .hero__abilites_icons {
     padding: 9px 0;
