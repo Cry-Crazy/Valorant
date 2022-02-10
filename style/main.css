@@ -374,7 +374,17 @@ p {
   right: 39%;
 }
 
-.main_page .page_background .main_page__container .container__name {
+.main_page .page_background .main_page__container .container__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 6fr;
+      grid-template-columns: 1fr 6fr;
+  -ms-grid-rows: 6fr  1fr;
+      grid-template-rows: 6fr  1fr;
+  height: 100%;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__name {
   position: relative;
   z-index: 10;
   width: -webkit-fit-content;
@@ -390,7 +400,7 @@ p {
   padding-bottom: 1%;
 }
 
-.main_page .page_background .main_page__container .container__name .container__name_name {
+.main_page .page_background .main_page__container .container__wrap .container__name .container__name_name {
   display: inline-block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -412,7 +422,7 @@ p {
           writing-mode: vertical-lr;
 }
 
-.main_page .page_background .main_page__container .container__name .container__name_logo {
+.main_page .page_background .main_page__container .container__wrap .container__name .container__name_logo {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -430,7 +440,7 @@ p {
   background-color: #1f23266e;
 }
 
-.main_page .page_background .main_page__container .container__name .container__name_logo::after {
+.main_page .page_background .main_page__container .container__wrap .container__name .container__name_logo::after {
   content: '';
   height: 4px;
   width: 40px;
@@ -439,14 +449,20 @@ p {
   top: 120%;
 }
 
-.main_page .page_background .main_page__container .container__name .container__name_logo svg {
+.main_page .page_background .main_page__container .container__wrap .container__name .container__name_logo svg {
   height: 48px;
   width: auto;
   mix-blend-mode: exclusion;
 }
 
-.main_page .page_background .main_page__container .container__name .container__name_logo svg path {
+.main_page .page_background .main_page__container .container__wrap .container__name .container__name_logo svg path {
   fill: #FF4656;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__abilites {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .main_page .page_background .main_page__footer {
