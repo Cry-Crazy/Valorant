@@ -302,7 +302,7 @@ p{
                             z-index: 3;
                             display: grid;
                             grid-template-columns: 1fr 6fr;
-                            grid-template-rows: 5fr  2fr;
+                            grid-template-rows: 6fr  1fr;
 
                             height: 100%;
                             width: 100%;
@@ -313,7 +313,7 @@ p{
                         align-self: end;
                         width: fit-content;
                         height: fit-content;
-                        letter-spacing: 10px;
+                        letter-spacing: 6px;
                         display: inline-block;
                         left: 20%;
                         bottom: -5%;
@@ -405,6 +405,7 @@ p{
                                     font-family: $druk;
                                     font-size: 4rem;
                                     text-transform: uppercase;
+                                    letter-spacing: 2px;
                                     -webkit-text-stroke:0.7px white;
                                     -webkit-text-fill-color: transparent;
                                 }
