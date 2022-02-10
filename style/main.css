@@ -26,7 +26,6 @@ p {
 .page-background {
   position: relative;
   height: 100vh;
-  margin: 0 auto;
   background-color: #1F2326;
   overflow: hidden;
   display: -ms-grid;
@@ -104,9 +103,6 @@ p {
 }
 
 .main_page {
-  background: url(../pictures/general/03b1a76c34563ab69c80a4ea7c06a79c.png) no-repeat center;
-  background-size: 100%;
-  background-position: 11% 150%;
   position: relative;
   width: 85%;
   height: 90%;
@@ -114,7 +110,10 @@ p {
   border-radius: 20px;
   -webkit-box-shadow: 0 0 20px black;
           box-shadow: 0 0 20px black;
-  z-index: 1;
+  background: url(../pictures/general/03b1a76c34563ab69c80a4ea7c06a79c.png) no-repeat center;
+  background-size: 100%;
+  background-position: 11% 150%;
+  z-index: 2;
 }
 
 .main_page .page_background {
@@ -254,7 +253,7 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube {
@@ -263,118 +262,122 @@ p {
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube1 {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   top: 8%;
   left: 34%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube2 {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   bottom: 20%;
   left: 40%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube3 {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   top: 30%;
   right: 20%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube4 {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   bottom: 10%;
   right: 5%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube5 {
-  height: 4px;
-  width: 30px;
+  height: 8px;
+  width: 60px;
   top: 20%;
   right: 40%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube6 {
-  height: 4px;
-  width: 30px;
+  height: 8px;
+  width: 60px;
   top: 60%;
   right: 40%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube7 {
-  height: 4px;
-  width: 30px;
+  height: 8px;
+  width: 60px;
   top: 70%;
   right: 20%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube8 {
-  height: 4px;
-  width: 112px;
+  height: 8px;
+  width: 224px;
   top: 5%;
   right: 20%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube9 {
-  height: 4px;
-  width: 20px;
+  height: 8px;
+  width: 40px;
   top: 12%;
   left: 5%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube10 {
-  height: 4px;
-  width: 4px;
+  height: 8px;
+  width: 8px;
   top: 8%;
   left: 10%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube11 {
-  height: 4px;
-  width: 4px;
+  height: 8px;
+  width: 8px;
   top: 8%;
   left: 12%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube12 {
-  height: 4px;
-  width: 4px;
+  height: 8px;
+  width: 8px;
   bottom: 8%;
   right: 10%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube13 {
-  height: 4px;
-  width: 4px;
+  height: 8px;
+  width: 8px;
   bottom: 8%;
   right: 12%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube14 {
-  height: 4px;
-  width: 4px;
+  height: 8px;
+  width: 8px;
   top: 40%;
   left: 5%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube15 {
-  height: 4px;
-  width: 4px;
+  height: 8px;
+  width: 8px;
   bottom: 26%;
   right: 39%;
 }
 
 .main_page .page_background .main_page__container .container__qubes .qube16 {
-  height: 4px;
-  width: 4px;
+  height: 8px;
+  width: 8px;
   top: 28%;
   right: 39%;
 }
 
 .main_page .page_background .main_page__container .container__wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 6fr;
@@ -382,21 +385,25 @@ p {
   -ms-grid-rows: 6fr  1fr;
       grid-template-rows: 6fr  1fr;
   height: 100%;
+  width: 100%;
 }
 
 .main_page .page_background .main_page__container .container__wrap .container__name {
   position: relative;
   z-index: 10;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  letter-spacing: 10px;
   display: inline-block;
-  left: 4%;
-  bottom: -6%;
-  border-bottom: 4px solid #1f23266e;
+  left: 20%;
+  border-bottom: 8px solid #1f23266e;
   padding-bottom: 1%;
 }
 
@@ -435,15 +442,15 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 40px;
-  width: 40px;
+  height: 80px;
+  width: 80px;
   background-color: #1f23266e;
 }
 
 .main_page .page_background .main_page__container .container__wrap .container__name .container__name_logo::after {
   content: '';
-  height: 4px;
-  width: 40px;
+  height: 8px;
+  width: 80px;
   background-color: #1f23266e;
   position: absolute;
   top: 120%;
@@ -457,6 +464,111 @@ p {
 
 .main_page .page_background .main_page__container .container__wrap .container__name .container__name_logo svg path {
   fill: #FF4656;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__heroes {
+  position: relative;
+  right: -2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__heroes .hero {
+  position: relative;
+  max-width: 440px;
+  width: 20%;
+  height: 90%;
+  margin-left: 7%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-top-left-radius: 20px;
+  background: #1F2326;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__heroes .hero .hero__description {
+  position: relative;
+  left: -9%;
+  top: 5%;
+  z-index: 4;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__heroes .hero .hero__description .hero__bornplace {
+  font-family: "druk";
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  color: #FF4656;
+  margin-left: 10px;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__heroes .hero .hero__description .hero__name {
+  font-family: "druk";
+  font-size: 4rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.7px white;
+  -webkit-text-fill-color: transparent;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__heroes .hero .hero__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__heroes .hero .hero__photo img {
+  position: relative;
+  right: 0;
+  height: 100%;
+  width: auto;
+  -webkit-transform: scale(100%);
+          transform: scale(100%);
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__heroes .hero .hero__abilites_icons {
+  position: absolute;
+  bottom: -4%;
+  right: -6%;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 15px 0;
+  border: 2px solid white;
+  background-color: #1F2326;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__heroes .hero .abilites_icons svg {
+  height: 50px;
+  width: auto;
+}
+
+.main_page .page_background .main_page__container .container__wrap .container__heroes .hero .abilites_icons #sova_icon {
+  width: 6    0px;
+  height: auto;
 }
 
 .main_page .page_background .main_page__container .container__wrap .container__abilites {
@@ -560,22 +672,22 @@ p {
   .main_page .main-page__header .header__wrap .header__accaunt .accaunt__name {
     font-size: .9rem;
   }
-  .main_page .main_page__container .container__name #agents {
+  .main_page .main_page__container .container__wrap .container__name #agents {
     font-size: 6rem;
   }
-  .main_page .main_page__container .container__name #valorant {
+  .main_page .main_page__container .container__wrap .container__name #valorant {
     height: 40px;
     width: 40px;
     -webkit-transform: translateY(-35%);
             transform: translateY(-35%);
   }
-  .main_page .main_page__container .container__name #valorant::after {
+  .main_page .main_page__container .container__wrap .container__name #valorant::after {
     content: '';
     height: 4px;
     width: 40px;
     top: 120%;
   }
-  .main_page .main_page__container .container__name #valorant svg {
+  .main_page .main_page__container .container__wrap .container__name #valorant svg {
     height: 20px;
     width: auto;
   }

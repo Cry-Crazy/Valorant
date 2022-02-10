@@ -2,7 +2,7 @@
 @import 'font';
 @import 'var';
 
-
+$qubeSize: 8px !global;
 
 
 
@@ -19,7 +19,6 @@ p{
 
     position: relative;
     height: 100vh;
-    margin: 0 auto;
     background-color: $dark;
     overflow: hidden;
     display: grid;
@@ -92,9 +91,6 @@ p{
 }
 
 .main_page{
-    background: url(../pictures/general/03b1a76c34563ab69c80a4ea7c06a79c.png) no-repeat center;
-    background-size: 100%;
-    background-position: 11% 150%;
     position: relative;
     width: 85%;
     height: 90%;
@@ -102,7 +98,11 @@ p{
     border-radius: 20px;
     box-shadow: 0 0 20px black;
 
-    z-index: 1;
+    background: url(../pictures/general/03b1a76c34563ab69c80a4ea7c06a79c.png) no-repeat center;
+    background-size: 100%;
+    background-position: 11% 150%;
+
+    z-index: 2;
     
     .page_background{
         display: flex;
@@ -194,7 +194,7 @@ p{
                         top: 0;
                         height: 100%;
                         width: 100%;
-                        z-index: 2;
+                        z-index: 1;
                         .qube {
                             position: absolute;
                             background: #1f23266e;
@@ -298,22 +298,27 @@ p{
                         }
                         }
                         .container__wrap{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 3;
                             display: grid;
                             grid-template-columns: 1fr 6fr;
                             grid-template-rows: 6fr  1fr;
 
                             height: 100%;
+                            width: 100%;
 
                         .container__name{
                         position: relative;
                         z-index: 10;
-
+                        align-self: end;
                         width: fit-content;
                         height: fit-content;
-                        
+                        letter-spacing: 10px;
                         display: inline-block;
-                        left: 4%;
-                        bottom: -6%;
+                        left: 20%;
+                        // bottom: 0;
 
                         border-bottom: $qubeSize solid #1f23266e ;
                         padding-bottom: 1%;
@@ -366,25 +371,89 @@ p{
                         }
                         }
                         .container__heroes {
+                        position: relative;
+                        right: -2%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
                         
-                        .hero {
 
+                        .hero {
+                            position: relative;
+                            
+                            max-width: 440px;
+                            width: 20%;
+                            height: 90%;
+                            margin-left: 7%;
+                            align-self: flex-end;
+                            border-top-left-radius: 20px;
+
+                            background: $dark;
                             .hero__description {
-                                
+                                position: relative;
+                                left: -9%;
+                                top: 5%;
+                                z-index: 4;
+                                writing-mode: vertical-rl;
                                 .hero__bornplace {
+                                    font-family: $druk;
+                                    font-size: 1.3rem;
+                                    letter-spacing: 3px;
+                                    color: $red;
+                                    margin-left: 10px;
+
                                 }
                                 .hero__name {
+                                    font-family: $druk;
+                                    font-size: 4rem;
+                                    text-transform: uppercase;
+                                    -webkit-text-stroke:0.7px white;
+                                    -webkit-text-fill-color: transparent;
                                 }
                             }
                             .hero__photo {
-                                
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                z-index: 3;
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
+                                img{
+                                    position: relative;
+                                    right: 0;
+
+                                    height: 100%;
+                                    width: auto;
+                                    transform: scale(100%);
+                                }
                             }
                             .hero__abilites_icons {
-                                
+                                position: absolute;
+                                bottom: -4%;
+                                right: -6%;
+                                z-index: 4;
+
+
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: space-around;
+
+                                width: 100%;
+                                padding: 15px 0;
+                                border: 2px solid white ;
+
+                                background-color: $dark;
                             }
                             .abilites_icons {
-                                .abilites_icons{
-
+                                svg{
+                                    height: 50px;
+                                    width: auto;
+                                }
+                                #sova_icon{
+                                    width: 6    0px;
+                                    height: auto;
                                 }
                                 .abilites_icons_1 {
                                 }
@@ -487,6 +556,7 @@ p{
 
 
 @media  (max-width:1440px) {
+    $qubeSize: 4px ;
     html{
         font-size: 10px;
     }
@@ -531,7 +601,6 @@ p{
         background-size: 100%;
         background-position: 0% 160%;
 
-
         .main-page__header {
             
             .header__wrap {
@@ -570,11 +639,12 @@ p{
         }
 
         .main_page__container{
-
-            .container__name {
+            .container__wrap{
+                .container__name {
 
                 #agents {
                     font-size: 6rem;
+                    // border-bottom: ;
                 }
                 #valorant {
                             height: 40px;
@@ -592,6 +662,8 @@ p{
                         
                     }
                 }
+                }
+
             }
         }
 
