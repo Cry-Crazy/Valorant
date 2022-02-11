@@ -108,7 +108,8 @@ p {
 
 .main_page {
   position: relative;
-  width: 85%;
+  min-width: 80%;
+  max-width: 85%;
   height: 90%;
   margin: 0 auto;
   border-radius: 20px;
@@ -652,9 +653,11 @@ p {
 }
 
 .main_page .page_background .main_page__container .container__wrap .container__abilites .ability__block .block__wrap .block__description .descriptopn_3 {
+  overflow: hidden;
   font-family: "montserrat-regular";
   font-size: 1rem;
   color: #1F2326;
+  text-overflow: '...';
 }
 
 .main_page .page_background .main_page__container .container__wrap .container__abilites .ability__block .block__wrap .block__ability_icon {

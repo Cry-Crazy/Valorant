@@ -4,6 +4,7 @@
 
 
 
+//todo сделать выпадающий список и острый угол слева вверху
 
 html, body{
     margin: 0;
@@ -90,7 +91,9 @@ p{
 
 .main_page{
     position: relative;
-    width: 85%;
+    min-width: 80%;
+    max-width: 85%;
+    // width: 80%;
     height: 90%;
     margin: 0 auto;
     border-radius: 20px;
@@ -518,10 +521,11 @@ p{
 
                                         }
                                         .descriptopn_3 {
-                                            
+                                            overflow: hidden;
                                             font-family: $mReg;
                                             font-size: 1rem;
-                                            color: $dark
+                                            color: $dark;
+                                            text-overflow: '...';
 
                                         }
                                     }
