@@ -14,6 +14,9 @@ p{
     margin: 0;
     padding: 0;
 }
+ul, li{
+    list-style-type: none;
+}
 .page-background{
 
     position: relative;
@@ -155,12 +158,51 @@ p{
                             gap: 2%;
                             width: 100%;
                             margin-left: 4%;
-                            p{
+                            .news__items {
+                                
+                                position: absolute;
+                                z-index: 3;
+                                display: grid;
+                                place-items: center;
+                                padding: 0;
+                                display: none;
+                                .news__item{
+
+                                    width: 100%;
+                                    margin: 5px 0;
+                                    padding: 5px 10px;
+                                    background-color: $grey;
+                                    text-align: center;
+
+                                }
+                                .news__item1 {
+                                }
+                                .news__item2 {
+                                }
+                                .news__item3 {
+                                }
+                                .news__item4 {
+                                }
+                            }
+                            .nav__item{
+                                &::after{
+                                    content: ""; font-family: FontAwesome;
+                                    display: inline-block;
+                                }
+                            }
+                            .nav__item:hover .news__items{
+                                display: block;
+                            }
+                            .nav__item:hover .nav__item::after{
+                                transform: rotate(90%);
+                            }
+                            li{
                                 font-family: $mBold;
                                 font-size: 1.2rem;
                                 text-transform: uppercase;
+                                color: white;
                                 a{
-                                    color: white;
+                                    color: inherit;
                                     text-decoration: none;
                                     display: inline-block;
                                 }
@@ -489,7 +531,7 @@ p{
 
                                 height: 100%;
                                 background-color: white;
-                                border: 2px solid #000000;
+                                border: 2px solid $dark;
                                 .block__wrap{
                                     display: flex;
                                     flex-direction: row;
@@ -829,7 +871,14 @@ p{
                         }
                     }
                 }
-
+                .container__abilites{
+                    .ability__block{
+                        border: 1px solid $dark !important;
+                    }
+                    .ability__next{
+                        border: 1px solid $dark !important;
+                    }
+                }
             }
         }
 

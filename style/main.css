@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'montserrat-bold';
   src: url(../fonts/Montserrat-Bold.ttf);
@@ -25,6 +26,10 @@ html, body {
 p {
   margin: 0;
   padding: 0;
+}
+
+ul, li {
+  list-style-type: none;
 }
 
 .page-background {
@@ -207,14 +212,48 @@ p {
   margin-left: 4%;
 }
 
-.main_page .page_background .main-page__header .header__wrap .header__links p {
+.main_page .page_background .main-page__header .header__wrap .header__links .news__items {
+  position: absolute;
+  z-index: 3;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  display: none;
+}
+
+.main_page .page_background .main-page__header .header__wrap .header__links .news__items .news__item {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px 10px;
+  background-color: #505155;
+  text-align: center;
+}
+
+.main_page .page_background .main-page__header .header__wrap .header__links .nav__item::after {
+  content: "";
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+.main_page .page_background .main-page__header .header__wrap .header__links .nav__item:hover .news__items {
+  display: block;
+}
+
+.main_page .page_background .main-page__header .header__wrap .header__links .nav__item:hover .nav__item::after {
+  -webkit-transform: rotate(90%);
+          transform: rotate(90%);
+}
+
+.main_page .page_background .main-page__header .header__wrap .header__links li {
   font-family: "montserrat-bold";
   font-size: 1.2rem;
   text-transform: uppercase;
+  color: white;
 }
 
-.main_page .page_background .main-page__header .header__wrap .header__links p a {
-  color: white;
+.main_page .page_background .main-page__header .header__wrap .header__links li a {
+  color: inherit;
   text-decoration: none;
   display: inline-block;
 }
@@ -602,7 +641,7 @@ p {
           flex-direction: row;
   height: 100%;
   background-color: white;
-  border: 2px solid #000000;
+  border: 2px solid #1F2326;
 }
 
 .main_page .page_background .main_page__container .container__wrap .container__abilites .ability__block .block__wrap {
@@ -834,6 +873,12 @@ p {
   .main_page .main_page__container .container__wrap .container__heroes .hero .hero__abilites_icons .abilites_icons #sova_icon {
     width: 30px;
     height: auto;
+  }
+  .main_page .main_page__container .container__wrap .container__abilites .ability__block {
+    border: 1px solid #1F2326 !important;
+  }
+  .main_page .main_page__container .container__wrap .container__abilites .ability__next {
+    border: 1px solid #1F2326 !important;
   }
 }
 
